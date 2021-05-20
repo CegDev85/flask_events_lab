@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>{{ title }} - My Events List</title>
+    </head>
+    <body>
+        
+        {% extends "base.html" %}
+
+            {% block content %}
+            <h1>Upcoming Events</h1>
+            {% for event in events %}
+            <div>
+                <ul>
+                    <li>
+                        Name : {{ event.event_name }}
+                        <br>
+                        <br>
+                        Description : {{ event.description  }}
+                        <br>
+                        <br>
+                        Location : {{ event.location }}
+                        <br>
+                        <br>
+                        Date : {{ event.date  }}
+                    <!-- {{ event.event_name }}: <b>{{ event.description }}</b> -->
+                
+                </ul>
+            </div>
+            <hr>
+
+            {% endfor %}
+            {% endblock %}
+
