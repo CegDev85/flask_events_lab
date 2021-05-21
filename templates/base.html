@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>Party Zone 8k</title>
 </head>
-<h1>PARTY ZONE 8K</h1>
+<div class ="Heading">
+    <h1>PARTY ZONE 8K</h1>
+</div>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/events">Home</a></li>
-            <br>
-            <li><a href="/events/new">Create new event</a></li>
-        </ul>
-    </nav>
+    <div class="top-buttons">
+        <nav>
+            <ul>
+                <li><a href="/events">Home</a></li>
+                <br>
+                <li><a href="/events/new">Create new event</a></li>
+            </ul>
+        </nav>
+    </div>
     <hr>
     {% block content %}
     {% endblock %}
